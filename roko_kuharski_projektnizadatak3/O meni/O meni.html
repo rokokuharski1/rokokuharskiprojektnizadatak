@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O meni</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        section {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .gallery-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .gallery img {
+            width: 28%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .video {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .video iframe {
+            width: 80%;
+            height: 400px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.8em;
+        }
+        .nav-links {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .nav-links a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../Vjezbe/vjezbe.html">Vježbe</a>
+        <a href="../Video/video.html">Video</a>
+    </div>
+    <header>
+        <h1>O meni</h1>
+    </header>
+    <section>
+        <p>
+            Student sam prve godine Grafičkog fakulteta u Zagrebu. Od početka srednje škole zaljubio sam se u dizajn, sada sam na putu da on postane moj posao. Proučavam različite grane dizajna, moj primarni alat kojim se koristim je Adobe Photoshop. Trenutno radim na pokretanju svog vlastitog branda odjeće te vam ga želim predstaviti.
+        </p>
+    </section>
+    <section class="gallery-section">
+        <h2>Rocco Studios</h2>
+        <div class="gallery">
+            <a href="3.png"><img src="3.png" alt="Logo"></a>
+            <a href="tee.png"><img src="tee.png" alt="Opis slike 2"></a> 
+            <a href="tee2.png"><img src="tee2.png" alt="Opis slike 3"></a> 
+        </div>
+    </section>
+    <section class="video">
+        <h2>Video Materijal</h2>
+        <iframe src="https://www.youtube.com/embed/F4nAMhmt3Ck" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+</body>
+</html>

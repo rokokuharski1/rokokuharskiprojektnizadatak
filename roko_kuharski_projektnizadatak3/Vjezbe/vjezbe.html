@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vježbe - vektorska grafika</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            position: relative;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gallery-item {
+            width: calc(50% - 20px);
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery-item h3 {
+            font-size: 1.2em;
+            margin: 10px 0 5px 0;
+        }
+        .gallery-item p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .project-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .project-section img {
+            width: 50%;
+            height: auto;
+        }
+        .project-section p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .video-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .video-section img,
+        .video-section iframe {
+            width: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .nav-links {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .nav-links a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-links">
+        <a href="../index.html"">Home</a>
+        <a href="../O meni/O meni.html"o_meni.html"">O meni</a>
+        <a href="../Video/video.html"">Video</a>
+    </div>
+    <header>
+        <h1>VJEŽBE - vektorska grafika</h1>
+    </header>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="slike/vjezba1.jpg" alt="Slika 1">
+            <h3>Vježba 1</h3>
+            <p>Vlastiti font pomoću programa Font Forge.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="slike/vjezba2.jpg" alt="Slika 2">
+            <h3>Vježba 2</h3>
+            <p>Inicijali, stilizirani pomoću programa Adobe Illustrator.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="slike/vjezba3.jpg" alt="Slika 3">
+            <h3>Vježba 3</h3>
+            <p>Jednostavni oblici nacrtani pen tool-om, kolorizirani, pomoću programa Adobe Illustrator.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="slike/vjezba4.jpg" alt="Slika 4">
+            <h3>Vježba 4</h3>
+            <p>Zahtjevniji oblici nacrtani pen tool-om, kolorizirani. Korištenje različitih vrsta gradijenata pomoću programa Adobe Illustrator.</p>
+        </div>
+    </div>
+    <section class="project-section">
+        <h2>Projektni zadatak 1 - vektorska grafika</h2>
+        <img src="slike/projektni.jpg" alt="Projekt 1">
+        <p>Projektni zadatak zahtijevao je pomoću alata u Adobe Illustratoru rekonstruirati zadanu sliku. U projektu su se koristile tehnike pen tool-a, koloriziranja, dodavanje sjena i područja izražene svjetlosti, korištenja gradijenata i transparencija. Fokus je bio na detaljnosti i realizmu.</p>
+    </section>
+    <section class="additional-gallery">
+        <h2>Dodatne vježbe - vektorska grafika</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="slike/vjezba5.jpg" alt="Slika 5">
+                <h3>Vježba 5</h3>
+                <p>Retuširanje zadane slike pomoću programa Adobe Photoshop.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="slike/vjezba6.jpg" alt="Slika 6">
+                <h3>Vježba 6</h3>
+                <p>Selekcija i koloriziranje djelova slike pomoću programa Adobe Photoshop.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="slike/vjezba7.jpg" alt="Slika 7">
+                <h3>Vježba 7</h3>
+                <p>Fotomontaža različitih slika u jednu cijelovitu, naglasak je bio na sjeni i korekciji boja.</p>
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <h2>Projektni zadatak 2 - piksel grafika</h2>
+        <img src="slike/projektni2.jpg" alt="Projekt 2">
+        <p>Projektni zadatak zahtijevao je pomoću alata u Adobe Photoshopu, ukomponirati više odvojenih slika u jednu s naglaskom na kompoziciju, sjene i uklapanje boja.</p>
+    </section>
+    <section class="video-section">
+        <h2>VJEŽBE - video/web</h2>
+        <div class="center-content">
+            <img src="slike/vjezba8.jpg">
+            <h3>Vježba 8</h3>
+            <p>Stvaranje kinemagrafa uz pomoć Photoshop-a i Adobe Premiere-a.</p>
+        </div>
+        <div class="center-content">
+            <iframe src="https://www.youtube.com/embed/3DXnXURhqzU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>Vježba 9</h3>
+            <p>Video obrada dva različita videa u programu Adobe Premiere Pro.</p>
+        </div>
+    </section>
+</body>
+</html>
